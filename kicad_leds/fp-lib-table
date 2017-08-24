@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name heart-electronics)(type KiCad)(uri "$(KIPRJMOD)/heart-electronics.pretty")(options "")(descr ""))
+)

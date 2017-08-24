@@ -1,0 +1,161 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:switches
+LIBS:heart-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Battery_Cell BT1
+U 1 1 59985B37
+P 3400 3150
+F 0 "BT1" H 3500 3250 50  0000 L CNN
+F 1 "Battery_Cell" H 3500 3150 50  0000 L CNN
+F 2 "heart-electronics:BATCONN_12MM" V 3400 3210 50  0001 C CNN
+F 3 "" V 3400 3210 50  0001 C CNN
+	1    3400 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_SPDT SW1
+U 1 1 59985B8C
+P 3500 2550
+F 0 "SW1" H 3500 2720 50  0000 C CNN
+F 1 "SW_SPDT" H 3500 2350 50  0000 C CNN
+F 2 "heart-electronics:AYZ0202" H 3500 2550 50  0001 C CNN
+F 3 "" H 3500 2550 50  0001 C CNN
+	1    3500 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L R R1
+U 1 1 59985C2C
+P 4200 2350
+F 0 "R1" V 4280 2350 50  0000 C CNN
+F 1 "330" V 4200 2350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4130 2350 50  0001 C CNN
+F 3 "" H 4200 2350 50  0001 C CNN
+	1    4200 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D1
+U 1 1 59985CAF
+P 4350 2750
+F 0 "D1" H 4350 2850 50  0000 C CNN
+F 1 "LED" H 4350 2650 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 4350 2750 50  0001 C CNN
+F 3 "" H 4350 2750 50  0001 C CNN
+	1    4350 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D2
+U 1 1 59985D48
+P 4650 2750
+F 0 "D2" H 4650 2850 50  0000 C CNN
+F 1 "LED" H 4650 2650 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 4650 2750 50  0001 C CNN
+F 3 "" H 4650 2750 50  0001 C CNN
+	1    4650 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D3
+U 1 1 59985D77
+P 4950 2750
+F 0 "D3" H 4950 2850 50  0000 C CNN
+F 1 "LED" H 4950 2650 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 4950 2750 50  0001 C CNN
+F 3 "" H 4950 2750 50  0001 C CNN
+	1    4950 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D4
+U 1 1 59985D9F
+P 5250 2750
+F 0 "D4" H 5250 2850 50  0000 C CNN
+F 1 "LED" H 5250 2650 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 5250 2750 50  0001 C CNN
+F 3 "" H 5250 2750 50  0001 C CNN
+	1    5250 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D5
+U 1 1 59985DCA
+P 5600 2750
+F 0 "D5" H 5600 2850 50  0000 C CNN
+F 1 "LED" H 5600 2650 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 5600 2750 50  0001 C CNN
+F 3 "" H 5600 2750 50  0001 C CNN
+	1    5600 2750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3500 2350 4050 2350
+Wire Wire Line
+	4350 2350 4950 2350
+Wire Wire Line
+	4950 2600 4950 2350
+Wire Wire Line
+	4350 2600 5600 2600
+Connection ~ 4650 2600
+Connection ~ 4950 2600
+Connection ~ 5250 2600
+Wire Wire Line
+	4350 2900 5600 2900
+Connection ~ 5250 2900
+Connection ~ 4950 2900
+Connection ~ 4650 2900
+Wire Wire Line
+	4950 2900 4950 3250
+Wire Wire Line
+	4950 3250 3400 3250
+Wire Wire Line
+	3600 2750 3600 2850
+Wire Wire Line
+	3600 2850 3400 2850
+Wire Wire Line
+	3400 2850 3400 2950
+$EndSCHEMATC
